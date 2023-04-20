@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { FriendName, OnlieCheck } from './FriendListItem.styled';
 
 export const FriendListItem = ({ item: { avatar, name, isOnline } }) => {
   return (
     <>
-      <span>{isOnline}</span>
+      <OnlieCheck isOnline={isOnline}></OnlieCheck>
       <img src={avatar} alt="User avatar" width="48" />
-      <p>{name}</p>
+      <FriendName>{name}</FriendName>
     </>
   );
 };

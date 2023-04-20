@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProfCard = styled.div`
   text-align: center;
   width: 250px;
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
   margin: 0 auto;
   margin-bottom: 30px;
   border-radius: 10px;

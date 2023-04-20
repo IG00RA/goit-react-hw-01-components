@@ -7,7 +7,7 @@ export const List = styled.ul`
 export const Section = styled.section`
   text-align: center;
   width: 400px;
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
   margin: 0 auto;
   margin-bottom: 30px;
 `;
@@ -24,6 +24,6 @@ export const Item = styled.li`
   flex-direction: column;
   padding: 10px;
   width: 100%;
-  color: white;
+  color: ${props => props.theme.colors.white};
   align-items: center;
 `;
