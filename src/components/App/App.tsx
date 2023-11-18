@@ -1,4 +1,4 @@
-import { GlobalStyle } from '../GlobalStyle';
+import GlobalStyle from '../GlobalStyle';
 import { Statistics } from '../Statistics/Statistics';
 import { Profile } from '../Profile/Profile';
 import { FriendList } from '../FriendList/FriendList';
@@ -7,7 +7,7 @@ import user from '../DataBase/user.json';
 import stats from '../DataBase/data.json';
 import friends from '../DataBase/friends.json';
 import transactions from '../DataBase/transactions.json';
-import { Container } from './App.styled';
+import Container from './App.styled';
 
 export const App = () => {
   return (

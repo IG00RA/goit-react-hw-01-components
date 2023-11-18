@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
+
 body {
   margin: 0;
 
@@ -47,7 +48,7 @@ li {
 `;
 
 export const randomColor = () => {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 };
+
+export default GlobalStyle;
