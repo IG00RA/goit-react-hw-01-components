@@ -1,6 +1,9 @@
 import styled from 'styled-components';
+interface OnlineCheckProps {
+  isOnline: boolean;
+}
 
-export const OnlieCheck = styled.span`
+export const OnlineCheck = styled.span<OnlineCheckProps>`
   width: 20px;
   height: 20px;
   border-radius: 50%;
