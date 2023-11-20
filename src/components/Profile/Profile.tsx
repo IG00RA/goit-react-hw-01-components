@@ -1,3 +1,4 @@
+import { Users } from '../../types/dataBaseTypes';
 import {
   Avatar,
   ProfCard,
@@ -8,7 +9,13 @@ import {
   UserStats,
 } from './Profile.styled';
 
-export const Profile = ({ username, tag, location, avatar, stats }) => {
+export const Profile: React.FC<Users> = ({
+  username,
+  tag,
+  location,
+  avatar,
+  stats,
+}) => {
   return (
     <ProfCard>
       <UserInfo>
