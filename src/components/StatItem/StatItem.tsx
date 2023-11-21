@@ -1,10 +1,17 @@
-import { Data } from './StatItem.styled';
+import { Data } from '../../types/dataBaseTypes';
+import { UserData } from './StatItem.styled';
 
-export const StatItem = ({ item: { label, percentage } }) => {
+interface StatItemProps {
+  item: Data;
+}
+
+export const StatItem: React.FC<StatItemProps> = ({
+  item: { label, percentage },
+}) => {
   return (
     <>
-      <Data type="label">{label}</Data>
-      <Data type="percentage">{percentage}%</Data>
+      <UserData type="label">{label}</UserData>
+      <UserData type="percentage">{percentage}%</UserData>
     </>
   );
 };

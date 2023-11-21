@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Data = styled.span`
+interface TypeProps {
+  type: string;
+}
+
+export const UserData = styled.span<TypeProps>`
   display: flex;
   ${props => {
     if (props.type === 'percentage') {
