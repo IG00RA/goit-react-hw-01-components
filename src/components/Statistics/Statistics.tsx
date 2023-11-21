@@ -1,8 +1,14 @@
+import { Data } from '../../types/dataBaseTypes';
 import { randomColor } from '../GlobalStyle';
 import { StatItem } from '../StatItem/StatItem';
 import { List, Section, Tittle, Item } from './Statistics.styled';
 
-export const Statistics = ({ items, title }) => {
+interface StatisticsProps {
+  items: Data[];
+  title: string;
+}
+
+export const Statistics: React.FC<StatisticsProps> = ({ items, title }) => {
   return (
     <Section>
       {title && <Tittle>{title}</Tittle>}
