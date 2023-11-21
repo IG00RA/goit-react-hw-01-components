@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const TableData = styled.td`
+interface TransactionsType {
+  type?: string;
+}
+
+export const TableData = styled.td<TransactionsType>`
   padding: 10px;
   border: 0.5px solid ${props => `${props.theme.colors.darkGrey}`};
   color: ${props => `${props.theme.colors.black}`};

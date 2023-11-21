@@ -10,7 +10,7 @@ export const FriendListItem: React.FC<FriendListItemProps> = ({
 }) => {
   return (
     <>
-      <OnlineCheck isOnline={isOnline}></OnlineCheck>
+      <OnlineCheck isonline={isOnline.toString()}></OnlineCheck>
       <img src={avatar} alt="User avatar" width="48" />
       <FriendName>{name}</FriendName>
     </>

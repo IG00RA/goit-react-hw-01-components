@@ -1,7 +1,14 @@
+import { Transactions } from '../../types/dataBaseTypes';
 import { TransactionItem } from '../TransactionItem/TransactionItem';
 import { Table, TableHead, TableRow } from './TransactionHistory.styled';
 
-export const TransactionHistory = ({ items }) => {
+interface TransactionHistoryProps {
+  items: Transactions[];
+}
+
+export const TransactionHistory: React.FC<TransactionHistoryProps> = ({
+  items,
+}) => {
   return (
     <Table>
       <thead>

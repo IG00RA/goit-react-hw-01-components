@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 interface OnlineCheckProps {
-  isOnline: boolean;
+  isonline: string;
 }
 
 export const OnlineCheck = styled.span<OnlineCheckProps>`
@@ -8,7 +8,7 @@ export const OnlineCheck = styled.span<OnlineCheckProps>`
   height: 20px;
   border-radius: 50%;
   ${props => {
-    if (props.isOnline) {
+    if (JSON.parse(props.isonline)) {
       return `background-color: ${props.theme.colors.green}`;
     }
     return `background-color: ${props.theme.colors.red}`;
